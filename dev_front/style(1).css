@@ -1,0 +1,142 @@
+/*
+ Theme Name:   Jobify Child
+ Description:  Jobify Child Theme
+ Author:       Ambal Aurelie
+ Template:     jobify
+ Version:      1.0.0
+ Text Domain:  jobify-child
+*/
+<img height="1" width="1" style="display:none" src="https://app.accountcentric.com/8535b47/collect" />
+
+body {
+	background : #fff;
+	font-family: 'Hind', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Hind', sans-serif;
+}
+
+.individual-testimonial-author img {
+	width: 100px;
+}
+
+.home #masthead:not(.open){
+	background-color: transparent;
+}
+
+.showing_jobs {
+	display: none !important;
+}
+
+#searchform {
+	display: none;
+}
+
+.site-header.open .primary-menu-toggle {
+	position: absolute;
+	top: 5px;
+}
+.site-header.open .primary-menu-toggle span{
+	display:none;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.jobify_widget_testimonials .testimonial-slider-wrap {
+		padding: 0;
+	}
+	.individual-testimonial {
+		margin: 0 20px 0 0;
+	}
+}
+
+.jobify_widget_companies .testimonials-list {
+	width: auto !important;
+	text-align: center;
+}
+.jobify_widget_testimonials .testimonials-list {
+	width: 100% !important;
+	text-align : center;
+}
+.jobify_widget_companies .flex-direction-nav {
+	display: none;
+}
+.company-slider-item {
+	height: 60px !important;
+	width: 190px !important;
+	margin-bottom: 20px;
+	display: inline-block !important;
+	float: none !important;
+}
+.company-slider-item img {
+	max-height: 100%;
+	width: auto;
+}
+
+.individual-testimonial {
+	display: inline-block !important;
+	float: none !important;
+}
+
+@media (max-width: 740px) {
+	.company-slider-item:nth-child(n+7) {
+		display: none !important;
+	}
+	.company-slider-item {
+		width: 33% !important;
+	}
+}
+
+@media (max-width: 992px) {
+	.testimonials-list .individual-testimonial:nth-child(n+3) {
+		display: none !important;
+	}
+}
+
+@media (max-width: 590px) {
+	.testimonials-list .individual-testimonial:nth-child(n+2) {
+		display: none !important;
+	}
+	.company-slider-item {
+		width: 50% !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.company-slider-item:nth-child(n+4) {
+		display: none !important;
+	}
+	.company-slider-item {
+		width: 100% !important;
+	}
+}
+
+
+/**Maxime : Correction d'un bug sur le logo et de l'icone menu lorsqu'on fait varier la taille de l'écran**/
+@media (min-width: 768px) {.container, .jobify_widget_map div.job_listings, .jobify_widget_map div.resumes, .jobify_widget_map_resumes div.job_listings, .jobify_widget_map_resumes div.resumes
+	{
+		max-width: inherit;
+	}
+}
+
+/*background image*/
+
+
+section#jobify_widget_callout-2 .vidbg-container {
+	display : none;
+}
+section#jobify_widget_callout-2{
+	background-size : cover;
+	background-repeat : no-repeat;
+}
+
+@media (min-width:1200px){
+	section#jobify_widget_callout-2 .vidbg-container {
+		display:block;
+	}
+}
+
+@media (max-width: 320px) {section#jobify_widget_callout-2{background-image : url('css/img/bg_home_320.jpg');}}
+@media (min-width: 321px) and (max-width: 425px) {section#jobify_widget_callout-2{background-image : url('css/img/bg_home_425.jpg');}}
+@media (min-width: 426px) and (max-width: 768px) {section#jobify_widget_callout-2{background-image : url('css/img/bg_home_768.jpg');}}
+@media (min-width: 769px) and (max-width: 1199px) {section#jobify_widget_callout-2{background-image : url('css/img/bg_home_1024.jpg');}}
+/*******@Aurélie: Cette photo n'a pas le filtre souhaité, j'ai donc étendu le media précédent jusqu'à 1200px. ******* @media (min-width: 1025px) {section#jobify_widget_callout-2{background-image : url('css/img/bg_home.jpg');}} **/
